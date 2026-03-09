@@ -32,23 +32,27 @@ This skill helps Codex **build or audit IB-style DCF models** with consistent gu
 
 On your machine with Codex installed, run:  
 
-```bash
+```
+bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo <OWNER>/<REPO> \
   --path ib-style-dcf
-
-Then restart Codex so it reloads the skills list.
+```
 
 ### Option B — Manual install
-Clone this repo
-Copy the skill folder into your Codex skills directory:
+1. Clone this repo
+2. Copy the skill folder into your Codex skills directory:
+```
+bash
 cp -R ib-style-dcf ~/.codex/skills/ib-style-dcf
 Restart Codex
+```
 
 ## How To Use
 In Codex, invoke the skill by referencing $ib-style-dcf in your prompt.
 
-Example 1 — Build an IB-style DCF from inputs
+**Example 1 — Build an IB-style DCF from inputs**
+```
 Use $ib-style-dcf to build an unlevered DCF.
 
 Context:
@@ -73,8 +77,10 @@ Deliver:
 - EV→equity bridge and implied value per share
 - Sensitivities: WACC × g and WACC × exit multiple
 - Key risks / key drivers
+```
 
-Example 2 — Audit an existing DCF
+**Example 2 — Audit an existing DCF**
+```
 Use $ib-style-dcf to audit this DCF for formula consistency and red flags.
 
 I’m pasting:
@@ -87,36 +93,43 @@ Please identify:
 1) what is wrong,
 2) how to fix,
 3) impact on EV / value per share.
+```
 
-What Output To Expect
+## What Output To Expect
 When used correctly, Codex should produce:
 
-A clean Key Assumptions section (tax rate type, WACC inputs, terminal assumptions, operating drivers)
-A transparent UFCF bridge with correct signs (including ΔNWC)
-A consistent discounting approach and properly timed terminal value discounting
-A complete EV → equity → per-share bridge with clearly defined net debt + share count
-Sensitivity tables and a short interpretation of what drives the range
-A short sanitization report of any red flags discovered
-Validation (Optional)
+* A clean Key Assumptions section (tax rate type, WACC inputs, terminal assumptions, operating drivers)  
+* A transparent UFCF bridge with correct signs (including ΔNWC)  
+* A consistent discounting approach and properly timed terminal value discounting  
+* A complete EV → equity → per-share bridge with clearly defined net debt + share count
+* Sensitivity tables and a short interpretation of what drives the range
+* A short sanitization report of any red flags discovered
+
+## Validation (Optional)
 The official skill validation script requires pyyaml:
 
+```
 python3 -m pip install --user pyyaml
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py ib-style-dcf
-Contributing
+
+```
+## Contributing
 Contributions are welcome (issues and PRs). Great additions include:
 
-More edge-case handling (cyclicals, negative UFCF transitions, multi-segment)
-A clean Excel template (tabs/layout) consistent with the guardrails
-Sanitized example inputs/outputs to clarify “expected behavior”
+
+* More edge-case handling (cyclicals, negative UFCF transitions, multi-segment)
+* A clean Excel template (tabs/layout) consistent with the guardrails
+* Sanitized example inputs/outputs to clarify “expected behavior”
 Please do not include proprietary or confidential company data in issues or PRs.
 
-Citation
+## Citation
 If this repo materially informs published work (research, teaching materials, internal methodology docs), please cite it.
 
-Suggested citation
+## Suggested citation
 Bill Zhen Zhang. (2026). Financial Modeling Skills (Codex) (Version X.Y.Z) [Software]. GitHub. https://github.com/BillZhenZhang/Financial_Modeling_Skills
 
-BibTeX
+## BibTeX
+```
 @software{zhen_zhang_financial_modeling_skills_2026,
   author  = {Bill Zhen Zhang},
   title   = {Financial Modeling Skills (Codex)},
@@ -124,8 +137,9 @@ BibTeX
   version = {X.Y.Z},
   url     = {https://github.com/BillZhenZhang/Financial_Modeling_Skills},
 }
+```
 
-License
+## License
 This project is licensed under the terms in LICENSE:
 https://github.com/BillZhenZhang/Financial_Modeling_Skills/blob/HEAD/LICENSE
 
