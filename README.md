@@ -4,10 +4,10 @@ A hardened, investment-banking-style **unlevered DCF** skill for Codex: explicit
 
 > Replace `<OWNER>` and `<REPO>` in the badge links below.
 
-[![GitHub stars](https://img.shields.io/github/stars/<OWNER>/<REPO>?style=social)](https://github.com/<OWNER>/<REPO>)
-[![GitHub forks](https://img.shields.io/github/forks/<OWNER>/<REPO>?style=social)](https://github.com/<OWNER>/<REPO>/fork)
-[![License](https://img.shields.io/github/license/<OWNER>/<REPO>)](https://github.com/<OWNER>/<REPO>/blob/main/LICENSE)
-[![Release](https://img.shields.io/github/v/release/<OWNER>/<REPO>)](https://github.com/<OWNER>/<REPO>/releases)
+[![GitHub stars](https://img.shields.io/github/stars/<BillZhenZhang>/<Financial_Modeling_Skills>?style=social)](https://github.com/<BillZhenZhang>/<Financial_Modeling_Skills>)
+[![GitHub forks](https://img.shields.io/github/forks/<BillZhenZhang>/<Financial_Modeling_Skills>?style=social)](https://github.com/<BillZhenZhang>/<REPO>/fork)
+[![License](https://img.shields.io/github/license/<BillZhenZhang>/<Financial_Modeling_Skills>)](https://github.com/<BillZhenZhang>/<Financial_Modeling_Skills>/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/v/release/<BillZhenZhang>/<Financial_Modeling_Skills>)](https://github.com/<BillZhenZhang>/<Financial_Modeling_Skills>/releases)
 
 ## What This Skill Does
 
