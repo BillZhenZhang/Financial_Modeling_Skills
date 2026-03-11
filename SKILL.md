@@ -1,6 +1,6 @@
 ---
-name: ib-style-dcf
-description: Build, audit, and explain investment-banking-style (IB) unlevered DCF valuation models with standard assumptions, formatting conventions, and sensitivity/scenario analysis. Use when asked to value a company/business with a DCF, compute WACC, forecast unlevered free cash flow (UFCF), calculate terminal value (Gordon Growth and/or exit multiple), bridge enterprise value to equity value and per-share value, reconcile to market comps, or debug an existing DCF model/spreadsheet (Excel/Google Sheets/CSV) and its formulas.
+name: ib-style-dcf & commercial credit risk analytics
+description: Build, audit, and explain investment-banking-style (IB) unlevered DCF valuation models with standard assumptions, formatting conventions, and sensitivity/scenario analysis. Use when asked to value a company/business with a DCF, compute WACC, forecast unlevered free cash flow (UFCF), calculate terminal value (Gordon Growth and/or exit multiple), bridge enterprise value to equity value and per-share value, reconcile to market comps, or debug an existing DCF model/spreadsheet (Excel/Google Sheets/CSV) and its formulas. It can be used for multiple financial statement modelling, for investment banking research and also commercial credit risk analytics.
 ---
 
 # IB-Style DCF
@@ -72,13 +72,13 @@ Show the bridge explicitly so no line items are missed and the tax logic is cons
 
 **Core identities (use these exact formulas):**
 
-$$\text{EBITDA} = \text{EBIT} + \text{D\&A}$$
+$$\text{EBITDA} = \text{EBIT} + \text{D\\&A}$$
 
-$$\text{EBIT} = \text{EBITDA} - \text{D\&A}$$
+$$\text{EBIT} = \text{EBITDA} - \text{D\\&A}$$
 
 $$\text{NOPAT} = \text{EBIT} \times (1 - \text{Tax Rate})$$
 
-$$\text{UFCF} = \text{NOPAT} + \text{D\&A} - \text{CapEx} - \Delta\text{NWC}$$
+$$\text{UFCF} = \text{NOPAT} + \text{D\\&A} - \text{CapEx} - \Delta\text{NWC}$$
 
 **Implementation checklist:**
 
@@ -231,15 +231,15 @@ Use this section as the final backstop when auditing or rebuilding the model.
 
 Assume $\text{OpEx}$ excludes D\&A unless explicitly defined otherwise.
 
-$$\text{EBIT} = \text{Revenue} - \text{COGS} - \text{OpEx} - \text{D\&A}$$
+$$\text{EBIT} = \text{Revenue} - \text{COGS} - \text{OpEx} - \text{D\\&A}$$
 
-$$\text{EBITDA} = \text{EBIT} + \text{D\&A}$$
+$$\text{EBITDA} = \text{EBIT} + \text{D\\&A}$$
 
-$$\text{EBIT} = \text{EBITDA} - \text{D\&A}$$
+$$\text{EBIT} = \text{EBITDA} - \text{D\\&A}$$
 
 $$\text{NOPAT} = \text{EBIT} \times (1 - \text{Tax Rate})$$
 
-$$\text{UFCF} = \text{NOPAT} + \text{D\&A} - \text{CapEx} - \Delta\text{NWC}$$
+$$\text{UFCF} = \text{NOPAT} + \text{D\\&A} - \text{CapEx} - \Delta\text{NWC}$$
 
 **WACC + CAPM (core):**
 
